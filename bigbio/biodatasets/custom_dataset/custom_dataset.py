@@ -51,8 +51,8 @@ _CITATION = """\
 }
 """
 
-_DATASETNAME = "ge_ph"
-_DISPLAYNAME = "GePh"
+_DATASETNAME = "custom_dataset"
+_DISPLAYNAME = "CustomDataset"
 
 _DESCRIPTION = """\
 GePh corpus is a domain- and species-independent resource manually .
@@ -64,7 +64,7 @@ _HOMEPAGE = "http://www.gedisa.de/"
 _LICENSE = 'Creative Commons Attribution Share Alike 3.0 Unported'
 
 _URLS = {
-    _DATASETNAME: "d://Phythonprojekte/4110-BIOPHARM/GePh-1.0.0.tar.gz",
+    _DATASETNAME: "d://Phythonprojekte/4150-GEDISAPHA/CustomDataset-1.0.0.tar.gz",
 }
 
 _SUPPORTED_TASKS = [
@@ -78,29 +78,29 @@ _BIGBIO_VERSION = "1.0.0"
 
 
 class GePhDataset(datasets.GeneratorBasedBuilder):
-    """Gedisa Pharaminformation (GePh)"""
+    """Gedisa Pharaminformation (custom_dataset)"""
 
     SOURCE_VERSION = datasets.Version(_SOURCE_VERSION)
     BIGBIO_VERSION = datasets.Version(_BIGBIO_VERSION)
 
     BUILDER_CONFIGS = [
         BigBioConfig(
-            name="ge_ph_source",
+            name="custom_dataset_source",
             version=SOURCE_VERSION,
-            description="GePh source schema",
+            description="Custom Dataset source schema",
             schema="source",
-            subset_id="ge_ph",
+            subset_id="custom_dataset",
         ),
         BigBioConfig(
-            name="ge_ph_bigbio_kb",
+            name="ustom_dataset_bigbio_kb",
             version=BIGBIO_VERSION,
             description="GePh BigBio schema",
             schema="bigbio_kb",
-            subset_id="ge_ph",
+            subset_id="custom_dataset",
         ),
     ]
 
-    DEFAULT_CONFIG_NAME = "ge_ph_source"
+    DEFAULT_CONFIG_NAME = "custom_dataset_source"
 
     def _info(self) -> datasets.DatasetInfo:
         if self.config.schema == "source":
@@ -156,7 +156,7 @@ class GePhDataset(datasets.GeneratorBasedBuilder):
         """Returns SplitGenerators."""
         urls = _URLS[_DATASETNAME]
         data_dir = Path(dl_manager.download_and_extract(urls))
-        all_data = data_dir / "GePh-1.0.0" / "standoff"
+        all_data = data_dir / "CustomDataset-1.0.0" / "standoff"
 
         return [
             datasets.SplitGenerator(
