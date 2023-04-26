@@ -70,7 +70,7 @@ _HOMEPAGE = "https://github.com/isegura/DDICorpus"
 _LICENSE = 'Creative Commons Attribution Non Commercial 4.0 International'
 
 _URLS = {
-    _DATASETNAME: "D:\PythonProjekte\8000-Projektdaten\CustomGedisa/GedisaDDICorpus.rar",
+    _DATASETNAME: "D:\PythonProjekte\8000-Projektdaten\CustomGedisa/GedisaDDICorpus.zip",
 }
 
 _SUPPORTED_TASKS = [Tasks.NAMED_ENTITY_RECOGNITION, Tasks.RELATION_EXTRACTION]
