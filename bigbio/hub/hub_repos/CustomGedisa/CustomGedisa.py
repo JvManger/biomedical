@@ -66,7 +66,8 @@ pharmacodynamics interactions. It contains 1025 documents from two different \
 sources: DrugBank database and MedLine.
 """
 
-_HOMEPAGE = "https://github.com/isegura/DDICorpus"
+#_HOMEPAGE = "https://github.com/isegura/DDICorpus"
+_HOMEPAGE = ""
 
 _LICENSE = 'Creative Commons Attribution Non Commercial 4.0 International'
 
