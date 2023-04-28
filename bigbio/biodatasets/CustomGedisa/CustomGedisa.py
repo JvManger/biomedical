@@ -34,9 +34,9 @@ from .bigbiohub import brat_parse_to_bigbio_kb
 
 _LANGUAGES = ['German']
 _PUBMED = True
-_LOCAL = True
+_LOCAL = False
 _CITATION = """\
-@article{HERREROZAZO2013914,
+@article{
   title        = {
     The DDI corpus: An annotated corpus with pharmacological substances and
     drug-drug interactions
@@ -67,7 +67,7 @@ sources: DrugBank database and MedLine.
 
 #_HOMEPAGE = "https://github.com/isegura/DDICorpus"
 _HOMEPAGE = ""
-_LICENSE = 'Creative Commons Attribution Non Commercial 4.0 International'
+_LICENSE = ''
 
 _URLS = {
     _DATASETNAME: "D:\PythonProjekte\8000-Projektdaten\CustomGedisa/GedisaDDICorpus.zip",
