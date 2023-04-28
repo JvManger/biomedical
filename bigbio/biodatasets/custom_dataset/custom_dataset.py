@@ -35,7 +35,7 @@ from .bigbiohub import brat_parse_to_bigbio_kb
 
 _LANGUAGES = ['German']
 _PUBMED = True
-_LOCAL = False
+_LOCAL = True
 _CITATION = """\
 @inproceedings{ohta-etal-2012-open,
   author    = {Joachim},
