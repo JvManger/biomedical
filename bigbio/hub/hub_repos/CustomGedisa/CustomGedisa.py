@@ -34,7 +34,7 @@ from .bigbiohub import brat_parse_to_bigbio_kb
 
 _LANGUAGES = ['German']
 _PUBMED = True
-_LOCAL = False
+_LOCAL = True
 _CITATION = """\
 @article{HERREROZAZO2013914,
   title        = {
