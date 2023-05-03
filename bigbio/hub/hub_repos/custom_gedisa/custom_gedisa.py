@@ -87,7 +87,7 @@ class DDICorpusDataset(datasets.GeneratorBasedBuilder):
 
     BUILDER_CONFIGS = [
         BigBioConfig(
-            name="custom_gedia_source",
+            name="custom_gedisa_source",
             version=SOURCE_VERSION,
             description="Gedisa DDI Corpus source schema",
             schema="source",
