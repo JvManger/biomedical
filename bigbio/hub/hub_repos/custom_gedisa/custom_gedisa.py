@@ -56,7 +56,7 @@ _CITATION = """\
 }
 """
 
-_DATASETNAME = "CustomGedisa"
+_DATASETNAME = "custom_gedisa"
 _DISPLAYNAME = "Custom Gedisa"
 
 _DESCRIPTION = """\
