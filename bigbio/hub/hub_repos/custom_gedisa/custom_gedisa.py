@@ -70,7 +70,7 @@ _HOMEPAGE = ""
 _LICENSE = ''
 
 _URLS = {
-    _DATASETNAME: "D:\PythonProjekte\8000-Projektdaten\custom_gedisa/gedisaDDICorpus.zip",
+    _DATASETNAME: "D:\PythonProjekte\8000-Projektdaten\custom_gedisa\gedisaDDICorpus.zip",
 }
 
 _SUPPORTED_TASKS = [Tasks.NAMED_ENTITY_RECOGNITION, Tasks.RELATION_EXTRACTION]
